@@ -1,12 +1,12 @@
 -- Задача 1: Вторая зарплата
 -- Найти вторую по величине уникальную зарплату. Если нет, вернуть NULL.
 
--- SELECT (
---     SELECT DISTINCT salary
---     FROM Employee
---     ORDER BY salary DESC
---     OFFSET 1 LIMIT 1
--- ) AS SecondHighestSalary;
+SELECT (
+SELECT DISTINCT salary
+FROM Employee
+ORDER BY salary DESC
+OFFSET 1 LIMIT 1
+) AS SecondHighestSalary;
 
 
 -- Задача 2: Поиск дубликатов email
